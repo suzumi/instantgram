@@ -14,11 +14,26 @@
     @include('layouts.header')
 @show
 
-<div id="image-editer" class="image-editer"></div>
-<p class="img-upload">
-    <img src="http://www.terabo.net/wordpress/wp-content/uploads/python-logo-master-v3-TM.png"
-                           id="image" width="100%">
-</p>
+    <article class="timeline">
+        <p class="timeline__name">name name name</p>
+        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
+        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </article>
+    <article class="timeline">
+        <p class="timeline__name">name name name</p>
+        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
+        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </article>
+    <article class="timeline">
+        <p class="timeline__name">name name name</p>
+        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
+        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </article>
+    <article class="timeline">
+        <p class="timeline__name">name name name</p>
+        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
+        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </article>
 
 @section('nav')
     @include('layouts.nav')

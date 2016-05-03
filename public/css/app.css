@@ -4,7 +4,7 @@ img {
     width: 100%;
 }
 body {
-    padding-top: 40px;
+    padding: 40px 0 63px;
 }
 
 /* 外部機能のcss上書き */
@@ -107,4 +107,26 @@ label {
     background-color: red;
     padding: 6px;
     border-radius: 12px;
+}
+
+.timeline {
+    margin: 0 0 30px;
+}
+.timeline__name {
+    line-height: 64px;
+    padding: 0 20px 0 50px;
+    background: #fafafa;
+    color: #125688;
+}
+.timeline__img {
+    padding: 0 0 20px;
+}
+.timeline__msg {
+    padding: 0 20px;
+}
+.under-construction {
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform: translate(0,-50%);
 }
