@@ -43,3 +43,7 @@ img {
     font-family: 'Lobster', cursive;
     color: #fff;
 }
+
+.image-editer {
+    position: relative;
+}
