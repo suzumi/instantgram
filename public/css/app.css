@@ -72,6 +72,7 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
 .footer__list {
     font-size: 0;
@@ -80,13 +81,17 @@ body {
 .footer__list > li {
     display: inline-block;
     width: 20%;
-    padding: 10px 20px;
+    padding: 10px;
     box-sizing: border-box;
+    text-align: center
 }
 .footer__list > li.is-selected {
     background: #000;
 }
-.footer-list__inner {}
+.footer-list__inner {
+    display: inline-block;
+    width: 30px;
+}
 
 .login-register-container {
     background: linear-gradient(-135deg, #E4A972, #9941D8);
