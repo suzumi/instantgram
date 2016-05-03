@@ -122,14 +122,14 @@
                 console.log(data);
                 var template = '';
                 for (var i = 0; i < data.length; i++) {
-                    var dateDiff = moment().diff(data[i].created_at, "days");
-                    console.log(dateDiff);
-                    var dateTime = new Date(data[i].created_at);
+                    var date = moment(data[i].created_at).format('YYYY/MM/DD');
+
+                    //var dateTime = new Date(data[i].created_at);
                     template +=
                         '<article class="timeline">' +
                         '<div class="timeline__editor">' +
                             '<p class="editor__name">' + data[i].name + '</p>' +
-                        '<p class="edit__time">1時間前</p>' +
+                        '<p class="edit__time">' + date + '</p>' +
                         '</div>' +
                         '<p class="timeline__img"><img src="' + data[i].imgPath + '"></p>' +
                         '<p class="timeline__msg">' + data[i].desciption + '</p>' +
