@@ -33,5 +33,13 @@ img {
 .footer__list > li.is-selected {
     background: #000;
 }
-.footer-list__inner {
+.footer-list__inner {}
+
+.login-register-container {
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    color: #fff;
 }
