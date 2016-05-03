@@ -22,3 +22,5 @@ Route::get('/test', function() {
 Route::auth();
 
 Route::get('/', 'HomeController@index');
+
+Route::get('/upload', 'HomeController@upload');

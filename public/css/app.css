@@ -47,3 +47,11 @@ img {
 .image-editer {
     position: relative;
 }
+
+
+label {
+    color: white;
+    background-color: red;
+    padding: 6px;
+    border-radius: 12px;
+}
