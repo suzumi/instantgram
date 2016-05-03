@@ -1,8 +1,59 @@
+@charset "UTF-8"; 
+
 img {
     width: 100%;
 }
+body {
+    padding-top: 40px;
+}
+
+/* 外部機能のcss上書き */
+#avpw_controls {
+    min-width: auto!important;
+}
+#avpw_canvas_element.avpw_position_by_transform {
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%) scale(1)!important;
+}
+#avpw_all_effects {
+    width: 28px!important;
+}
+#avpw_apply_container {
+    width: 28px!important;
+}
+.avpw_mode_action .avpw_button {
+    width: 28px!important;
+}
+.avpw_mode_action {
+    width: 70px!important;
+}
+#avpw_tool_container {
+    left: 70px!important;
+}
+.avpw_tool_cutout_centered_enhance {
+    left: 10px!important;
+    margin-left: auto!important;
+}
+.avpw_mode_action_right, .avpw_mode_action_left {
+    z-index: 100;
+    background: #2F363F;
+}
+#avpw_rghtArrow {
+    right: 72px!important;
+}
+.avpw_tool_pager .avpw_clip {
+    right: 120px!important;
+}
+/* /外部機能のcss上書き */
+
+
+
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 0 10px;
     text-align: center;
