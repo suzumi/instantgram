@@ -22,4 +22,16 @@ class Usercontent extends Model
                 ]);
         });
     }
+
+    public static function getHome($userId)
+    {
+
+        return \DB::table('user_content')
+            ->leftjoin('users', 'user_content.user_id', '=', 'users.id')
+            ->where('user_content.user_id', '=', $userId)
+            ->orderBy('user_content.created_at', 'desc')
+            ->get();
+
+    }
+
 }

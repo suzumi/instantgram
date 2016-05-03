@@ -18,9 +18,9 @@ class ImageController extends Controller
         $this->middleware('auth');
     }
 
-    public function home($id)
+    public function home()
     {
-//        return User::getSnippetActivity($id);
+        return Usercontent::getHome($this->userId);
     }
 
     public function upload(Request $request)

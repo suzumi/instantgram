@@ -31,6 +31,7 @@
                     break;
             }
             $(document).on('change', '.js-input-file', this._imageEditor.bind(this));
+            this._getHome();
             //this._toggleClick();
             //this._notifications();
             //this._utilDeleteConfirm();
@@ -111,6 +112,32 @@
 
             //var image = document.getElementById('image');
 
+        },
+        _getHome: function() {
+            $.ajax({
+                'type': 'GET',
+                'url': '/api/home'
+            })
+            .done(function (data) {
+                console.log(data);
+                var template = '';
+                for (var i = 0; i < data.length; i++) {
+                    var dateDiff = moment().diff(data[i].created_at, "days");
+                    console.log(dateDiff);
+                    var dateTime = new Date(data[i].created_at);
+                    template +=
+                        '<article class="timeline">' +
+                        '<p class="timeline__name">' + data[i].name + '</p>' +
+                        '<p class="timeline__img"><img src="' + data[i].imgPath + '"></p>' +
+                        '<p class="timeline__msg">' + data[i].desciption + '</p>' +
+                        '<p class="timeline__date">' + dateDiff + '</p>' +
+                        '</article>'
+                }
+                $('.js-home-timeline').html(template);
+            })
+            .fail(function(){
+
+            });
         }
     };
 
