@@ -1,0 +1,10 @@
+body { height:100%; }
+
+.login-register-container {
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    color: #fff;
+}
