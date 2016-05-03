@@ -31,4 +31,20 @@ class HomeController extends Controller
     {
         return view('upload');
     }
+
+    public function searchWall()
+    {
+        return view('search-wall');
+    }
+
+    public function like()
+    {
+        return view('like');
+    }
+
+    public function mypage()
+    {
+        return view('mypage');
+    }
+
 }

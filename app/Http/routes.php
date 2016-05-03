@@ -22,8 +22,10 @@ Route::get('/test', function() {
 Route::auth();
 
 Route::get('/', 'HomeController@index');
-
 Route::get('/upload', 'HomeController@upload');
+Route::get('/search-wall', 'HomeController@searchWall');
+Route::get('/like', 'HomeController@like');
+Route::get('/mypage', 'HomeController@mypage');
 
 Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
     Route::post('upload', 'ImageController@upload');
