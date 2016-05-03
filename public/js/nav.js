@@ -127,10 +127,12 @@
                     var dateTime = new Date(data[i].created_at);
                     template +=
                         '<article class="timeline">' +
-                        '<p class="timeline__name">' + data[i].name + '</p>' +
+                        '<div class="timeline__editor">' +
+                            '<p class="editor__name">' + data[i].name + '</p>' +
+                        '<p class="edit__time">1時間前</p>' +
+                        '</div>' +
                         '<p class="timeline__img"><img src="' + data[i].imgPath + '"></p>' +
                         '<p class="timeline__msg">' + data[i].desciption + '</p>' +
-                        '<p class="timeline__date">' + dateDiff + '</p>' +
                         '</article>'
                 }
                 $('.js-home-timeline').html(template);
