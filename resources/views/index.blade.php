@@ -14,36 +14,12 @@
 @section('header')
     @include('layouts.header')
 @show
-<<<<<<< HEAD
 <div class="js-home-timeline"></div>
     {{--<article class="timeline">--}}
         {{--<p class="timeline__name">name name name</p>--}}
         {{--<p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>--}}
         {{--<p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>--}}
     {{--</article>--}}
-=======
-
-    <article class="timeline">
-        <div class="timeline__editor"><p class="editor__name">name name name</p><p class="edit__time">1時間前</p></div>
-        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
-        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    </article>
-    <article class="timeline">
-        <div class="timeline__editor"><p class="editor__name">name name name</p><p class="edit__time">1時間前</p></div>
-        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
-        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    </article>
-    <article class="timeline">
-        <div class="timeline__editor"><p class="editor__name">name name name</p><p class="edit__time">1時間前</p></div>
-        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
-        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    </article>
-    <article class="timeline">
-        <div class="timeline__editor"><p class="editor__name">name name name</p><p class="edit__time">1時間前</p></div>
-        <p class="timeline__img"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13102513_210436942675064_1963626264_n.jpg?se=7"></p>
-        <p class="timeline__msg">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    </article>
->>>>>>> 01e423a0f7a3ccaff3049ae30625e01b2d46d99b
 
 @section('nav')
     @include('layouts.nav')
