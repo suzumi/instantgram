@@ -3,6 +3,7 @@
 <head>
     <title>インスタントグラム</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <script src="https://dme0ih8comzn4.cloudfront.net/imaging/v2/editor.js"></script>

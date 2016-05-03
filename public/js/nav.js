@@ -68,6 +68,7 @@
                 self.dataUri = event.target.result;
                 var img_src = $('<img>').attr('src', self.dataUri);
                 $(img_src).attr('id', 'image');
+                $(img_src).hide();
                 $('span').html(img_src);
 
                 var Editor = new Aviary.Feather({
@@ -76,8 +77,27 @@
                     appendTo: 'image-editer',
                     maxSize: 375,
                     onSave: function (imageID, newURL) {
-                        var img = document.getElementById(imageID);
-                        img.src = newURL;
+                        //var newImg = newURL;
+                        console.log(newURL);
+                        $.ajaxSetup({
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            }
+                        });
+                        $.ajax({
+                            'type': 'POST',
+                            'url': '/api/upload',
+                            'data': {
+                                imgPath: newURL
+                            }
+                        })
+                        .done(function (data) {
+                            console.log("アップロード成功");
+                            location.href="/";
+                        })
+                        .fail(function (data) {
+                            console.log("失敗");
+                        });
                     }
                 });
                 console.log(img_src);

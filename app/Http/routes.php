@@ -24,3 +24,8 @@ Route::auth();
 Route::get('/', 'HomeController@index');
 
 Route::get('/upload', 'HomeController@upload');
+
+Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
+    Route::post('upload', 'ImageController@upload');
+    Route::get('home', 'ImageController@home');
+});
